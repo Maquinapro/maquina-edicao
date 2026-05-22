@@ -88,7 +88,7 @@ export default function PedidoModal({ pedido, editores, statusOpcoes, onClose, o
         </div>
 
         <form onSubmit={handleSave} className="px-6 py-5 space-y-4">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="col-span-2">
               <label className="block text-xs uppercase tracking-wider text-cinza-tinta mb-1.5 font-medium">Clínica *</label>
               <input className="input" value={form.clinica} onChange={(e) => set("clinica", e.target.value)} placeholder="Ex: Karina - MMatos" required />

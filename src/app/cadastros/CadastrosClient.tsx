@@ -145,7 +145,7 @@ export default function CadastrosClient({ initialEditores, initialStatus }: Prop
 
       {/* EDITORES */}
       {tab === "editores" && (
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Form */}
           <div className="card p-6">
             <h3 className="font-serif text-lg font-semibold mb-4">
