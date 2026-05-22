@@ -38,7 +38,7 @@ export default function Header({ userEmail }: HeaderProps) {
             />
             <div>
               <p className="text-[9px] tracking-widest uppercase text-cinza-poeira font-sans leading-none mb-0.5">
-                Máquina Estúdio
+                Máquina de Edição
               </p>
               <h1 className="font-serif text-lg sm:text-2xl font-semibold tracking-tight leading-none">
                 Controle de <em className="not-italic text-terracota">Conteúdo</em>
