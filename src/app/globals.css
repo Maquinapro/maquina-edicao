@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,ital,wght@9..144,0,400;9..144,0,500;9..144,0,600;9..144,0,700;9..144,1,400;9..144,1,600&family=Inter+Tight:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-font-smoothing: antialiased; }
+  body {
+    background-color: #F5F1EA;
+    color: #1A1A1A;
+    font-family: 'Inter Tight', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+  }
+  .btn-primary {
+    @apply bg-tinta text-marfim px-4 py-2 rounded text-sm font-medium hover:bg-cinza-tinta transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-marfim border border-linha text-cinza-tinta px-4 py-2 rounded text-sm font-medium hover:border-cinza-poeira transition-colors;
+  }
+  .btn-danger {
+    @apply bg-terracota-claro text-terracota px-4 py-2 rounded text-sm font-medium hover:bg-terracota hover:text-marfim transition-colors;
+  }
+  .input {
+    @apply w-full bg-marfim border border-linha rounded px-3 py-2 text-sm text-tinta placeholder-cinza-poeira focus:outline-none focus:border-cinza-tinta transition-colors;
+  }
+  .card {
+    @apply bg-marfim border border-linha rounded-lg;
+  }
+}
